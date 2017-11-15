@@ -50,3 +50,15 @@ describe("foo", function() {
         });
     });
 });
+
+describe("foobar", function() {
+    describe("when foobar is used", function(){
+        it("should be able to get a reverse boolean of that set", function() {
+            expect(foobar()).toBe(true);
+            setBar(false);
+            expect(foobar()).toBe(true);
+            setBar(true);
+            expect(foobar()).toBe(false);
+        });
+    });
+});
