@@ -21,3 +21,11 @@ var bar = true;
 function setBar(bool = true) {
     bar = Boolean(bool);
 }
+
+/**
+ * Get bar value
+ * @return {boolean}
+ */
+function getBar() {
+    return bar;
+}
