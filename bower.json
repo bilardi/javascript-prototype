@@ -1,0 +1,26 @@
+{
+  "name": "MyObject",
+  "description": "The Javascript prototype",
+  "keywords": ["prototype", "Javascript", "object"],
+  "license": "MIT",
+  "authors": ["Alessandra Bilardi <alessandra.bilardi@gmail.com> (http://alessandra.bilardi.net/)"],
+  "homepage": "https://github.com/bilardi/jacascript-prototype.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bilardi/javascript-prototype.git"
+  },
+  "main": ["src/MyObject/MyObject.js"],
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "2.8"
+  },
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "*#*#",
+    "*~",
+    "bower_components",
+    "test"
+  ],
+  "private": true
+}
