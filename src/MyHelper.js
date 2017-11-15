@@ -37,3 +37,12 @@ function getBar() {
 function baz() {
     return Boolean(Math.floor(Math.random() * 2));
 }
+
+/**
+ * Get reverse of foo value
+ * @param {boolean} foo
+ * @return {boolean}
+ */
+function foo(foo) {
+    return !foo;
+}
