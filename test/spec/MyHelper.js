@@ -32,3 +32,12 @@ describe("getBar", function() {
         });
     });
 });
+
+describe("baz", function() {
+    describe("when baz is used", function(){
+        it("should be able to return a random boolean", function() {
+            var boolean = baz();
+            expect(boolean).toEqual(new Boolean(boolean));
+        });
+    });
+});
