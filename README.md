@@ -7,22 +7,22 @@ See the development of this code step by step with [see-git-steps](https://githu
 
 ## Installation
 
-The package is self-consistent but if you want to test it-self, you need internet.
+The package is self-consistent but if you want to test it-self, you need internet for testing with Jasmine (Behavior-Driven JavaScript).
 
 ## Usage
 
-Run the unit tests [test/SpecRunner.html](test/SpecRunner.html) file on your browser to use javascript scripts functions. This is a best practice.
+Run the unit tests with [test/SpecRunner.html](test/SpecRunner.html) file on your browser to use javascript scripts functions. This is a best practice.
 
 ## Development
 
-The Javascript language is very permissive, but if you use a basic documentation like [JSDoc](http://usejsdoc.org/) and a unit test like [Jasmine](https://jasmine.github.io/), everyone can easily read your code!
+The Javascript language is very permissive, but if you use a basic documentation like [JSDoc](http://usejsdoc.org/) and unit / functional test like [Jasmine](https://jasmine.github.io/), everyone can easily read your code!
 
 It is common use to test the code step by step and Jasmine is a good beginning for unit test and functional test.
 
 Test with Jasmine is simple
 * create your test/spec/testScript.js
 * add it into test/SpecRunner.html in the spec files space
-* create your src/script.js
+* create your src/Script.js
 * add it into test/SpecRunner.html in the source files space
 * open test/SpecRunner.html on your browser and good luck!
 
