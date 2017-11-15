@@ -41,3 +41,12 @@ describe("baz", function() {
         });
     });
 });
+
+describe("foo", function() {
+    describe("when foo is used", function(){
+        it("should be able to get the reverse boolean", function() {
+            expect(foo(true)).toBe(false);
+            expect(foo(false)).toBe(true);
+        });
+    });
+});
