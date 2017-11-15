@@ -29,3 +29,11 @@ function setBar(bool = true) {
 function getBar() {
     return bar;
 }
+
+/**
+ * Get random boolean
+ * @return {boolean}
+ */
+function baz() {
+    return Boolean(Math.floor(Math.random() * 2));
+}
