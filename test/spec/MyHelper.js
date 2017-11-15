@@ -20,3 +20,15 @@ describe("setBar", function() {
         });
     });
 });
+
+describe("getBar", function() {
+    describe("when getBar is used", function(){
+        it("should be able to get bar variable", function() {
+            expect(getBar()).toBe(false);
+            setBar(true);
+            expect(getBar()).toBe(true);
+            setBar(false);
+            expect(getBar()).toBe(false);
+        });
+    });
+});
