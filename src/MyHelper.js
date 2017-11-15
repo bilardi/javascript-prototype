@@ -46,3 +46,11 @@ function baz() {
 function foo(foo) {
     return !foo;
 }
+
+/**
+ * Foobar
+ * @return {boolean}
+ */
+function foobar() {
+    return foo(getBar());
+}
