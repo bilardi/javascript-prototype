@@ -31,5 +31,31 @@ MySimpleObject.prototype = {
      */
     getBar: function() {
         return this.bar;
+    },
+    
+    /**
+     * Get random boolean
+     * @return {boolean}
+     */
+    baz: function() {
+        return Boolean(Math.floor(Math.random() * 2));
+    },
+
+    /**
+     * Get reverse of foo value
+     * @override
+     * @param {boolean} foo
+     * @return {boolean}
+     */
+    foo: function(foo) {
+        return !foo;
+    },
+
+    /**
+     * Foobar
+     * @return {boolean}
+     */
+    foobar: function() {
+        return this.foo(this.getBar());
     }
 };
