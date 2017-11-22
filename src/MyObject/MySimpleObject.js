@@ -16,3 +16,20 @@
 function MySimpleObject(bar = true) {
     this.bar = Boolean(bar);
 }
+
+/**
+ * My simple Object implements and augments of some methods
+ *
+ * @implements {MyObjectInterface}
+ * @augments MyObjectAbstract
+ */
+MySimpleObject.prototype = {
+    /**
+     * Get bar value
+     * @override
+     * @return {boolean}
+     */
+    getBar: function() {
+        return this.bar;
+    }
+};
