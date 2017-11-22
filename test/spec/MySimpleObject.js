@@ -15,5 +15,28 @@ describe("MySimpleObject", function() {
             myObject = new MySimpleObject();
             expect(myObject).toEqual(jasmine.objectContaining({}));
         });
+        it("should be able to initialize bar to default value", function() {
+            myObject = new MySimpleObject();
+            expect(myObject).toEqual(jasmine.objectContaining({"bar":true}));
+        });
+        it("should be able to initialize bar with true value", function() {
+            myObject = new MySimpleObject(true);
+            expect(myObject).toEqual(jasmine.objectContaining({"bar":true}));
+        });
+        it("should be able to initialize bar with false value", function() {
+            myObject = new MySimpleObject(false);
+            expect(myObject).toEqual(jasmine.objectContaining({"bar":false}));
+        });
+    });
+ 
+    describe("when getBar is called", function(){
+        it("should be able to get bar value", function() {
+            myObject = new MySimpleObject();
+            expect(myObject.getBar()).toBe(true);
+            myObject = new MySimpleObject(true);
+            expect(myObject.getBar()).toBe(true);
+            myObject = new MySimpleObject(false);
+            expect(myObject.getBar()).toBe(false);
+        });
     });
 });
