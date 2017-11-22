@@ -28,7 +28,7 @@ describe("MySimpleObject", function() {
             expect(myObject).toEqual(jasmine.objectContaining({"bar":false}));
         });
     });
- 
+
     describe("when getBar is called", function(){
         it("should be able to get bar value", function() {
             myObject = new MySimpleObject();
@@ -37,6 +37,31 @@ describe("MySimpleObject", function() {
             expect(myObject.getBar()).toBe(true);
             myObject = new MySimpleObject(false);
             expect(myObject.getBar()).toBe(false);
+        });
+    });
+
+    describe("when baz is used", function(){
+        it("should be able to return a random boolean", function() {
+            var boolean = myObject.baz();
+            expect(boolean).toEqual(new Boolean(boolean));
+        });
+    });
+
+    describe("when foo is used", function(){
+        it("should be able to get the reverse boolean", function() {
+            expect(myObject.foo(true)).toBe(false);
+            expect(myObject.foo(false)).toBe(true);
+        });
+    });
+
+    describe("when foobar is used", function(){
+        it("should be able to get a reverse boolean of that set", function() {
+            myObject = new MySimpleObject();
+            expect(myObject.foobar()).toBe(false);
+            myObject = new MySimpleObject(true);
+            expect(myObject.foobar()).toBe(false);
+            myObject = new MySimpleObject(false);
+            expect(myObject.foobar()).toBe(true);
         });
     });
 });
