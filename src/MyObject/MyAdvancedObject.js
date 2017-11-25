@@ -24,3 +24,30 @@ function MyAdvancedObject(bar = true) {
  * @extends MyObjectAbstract
  */
 MyAdvancedObject.prototype = new MyObjectAbstract();
+
+/**
+ * Get bar value
+ * @override
+ * @return {boolean}
+ */
+MyAdvancedObject.prototype.getBar = function() {
+    return this.bar;
+};
+    
+/**
+ * Get reverse of foo value
+ * @override
+ * @param {boolean} foo
+ * @return {boolean}
+ */
+MyAdvancedObject.prototype.foo = function(foo) {
+    return !foo;
+};
+
+/**
+ * Foobar
+ * @return {boolean}
+ */
+MyAdvancedObject.prototype.foobar = function() {
+    return this.foo(this.getBar());
+};
